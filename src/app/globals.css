@@ -17,6 +17,174 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+
+
+}
+
+@theme {
+  /* Primary Colors */
+  --color-primary-black: #000;
+  --color-primary-neutral: #404040;
+  --color-primary-white: #ffffff;
+
+  /* Zinc colors */
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-500: #71717a;
+  --color-zinc-800: #27272a;
+
+  /* Error Color */
+  --color-error-500: #ef4444;
+  
+  /* Typography System */
+  
+  /* Heading H1 - 36px */
+  --font-size-h1: 36px;
+  --line-height-h1: 44px;
+  --letter-spacing-h1: -0.02em;
+  
+  /* Heading H2 - 32px */
+  --font-size-h2: 32px;
+  --line-height-h2: 40px;
+  --letter-spacing-h2: -0.02em;
+  
+  /* Heading H3 - 28px */
+  --font-size-h3: 28px;
+  --line-height-h3: 32px;
+  --letter-spacing-h3: -0.02em;
+  
+  /* Heading H4 - 24px */
+  --font-size-h4: 24px;
+  --line-height-h4: 28px;
+  --letter-spacing-h4: -0.02em;
+  
+  /* Heading H5 - 20px */
+  --font-size-h5: 20px;
+  --line-height-h5: 24px;
+  --letter-spacing-h5: -0.02em;
+  
+  /* Heading H6 - 16px */
+  --font-size-h6: 16px;
+  --line-height-h6: 20px;
+  --letter-spacing-h6: -0.02em;
+  
+  /* Paragraph P1 - 20px */
+  --font-size-p1: 20px;
+  --line-height-p1: 24px;
+  --letter-spacing-p1: 0.02em;
+  
+  /* Paragraph P2 - 16px */
+  --font-size-p2: 16px;
+  --line-height-p2: 20px;
+  --letter-spacing-p2: 0.02em;
+  
+  /* Paragraph P3 - 12px */
+  --font-size-p3: 12px;
+  --line-height-p3: 16px;
+  --letter-spacing-p3: 0.02em;
+  
+  /* Button Text - 20px */
+  --font-size-btn: 20px;
+  --line-height-btn: 24px;
+  --letter-spacing-btn: 0.02em;
+  
+  /* Button Text 2 - 16px */
+  --font-size-btn2: 16px;
+  --line-height-btn2: 20px;
+  --letter-spacing-btn2: 0.02em;
+  
+  /* Underlined - 20px */
+  --font-size-underlined: 20px;
+  --line-height-underlined: 24px;
+  --letter-spacing-underlined: -0.02em;
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+
+.text-heading-h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  letter-spacing: var(--letter-spacing-h1);
+}
+
+.text-heading-h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
+}
+
+.text--heading-h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  letter-spacing: var(--letter-spacing-h3);
+}
+
+.text-heading-h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+  letter-spacing: var(--letter-spacing-h4);
+}
+
+.text-heading-h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
+  letter-spacing: var(--letter-spacing-h5);
+}
+
+.text-heading-h6 {
+  font-size: var(--font-size-h6);
+  line-height: var(--line-height-h6);
+  letter-spacing: var(--letter-spacing-h6);
+}
+
+.text-body-lg {
+  font-size: var(--font-size-p1);
+  line-height: var(--line-height-p1);
+  letter-spacing: var(--letter-spacing-p1);
+}
+
+.text-body-md {
+  font-size: var(--font-size-p2);
+  line-height: var(--line-height-p2);
+  letter-spacing: var(--letter-spacing-p2);
+}
+
+.text--body-sm {
+  font-size: var(--font-size-p3);
+  line-height: var(--line-height-p3);
+  letter-spacing: var(--letter-spacing-p3);
+}
+
+.text-button-1 {
+  font-size: var(--font-size-btn);
+  line-height: var(--line-height-btn);
+  letter-spacing: var(--letter-spacing-btn);
+}
+
+.text-button-2 {
+  font-size: var(--font-size-btn2);
+  line-height: var(--line-height-btn2);
+  letter-spacing: var(--letter-spacing-btn2);
+}
+
+.text-underlined {
+  font-size: var(--font-size-underlined);
+  line-height: var(--line-height-underlined);
+  letter-spacing: var(--letter-spacing-underlined);
+  text-decoration: underline;
+}
+
+/* Outlined text utility */
+.text-outlined {
+  -webkit-text-stroke: 1px currentColor;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
