@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import { Download } from "lucide-react";
 import { ModeToggle } from "../ModeToggle";
 import { useTheme } from "next-themes";
+import { linkUnderlineAnimation } from "./data";
 
 export default function Header() {
   const { theme } = useTheme();
@@ -18,22 +19,30 @@ export default function Header() {
         height={32}
         alt="Logo criada para o Portifólio do Pedro Sales onde contém uma letra X e uma letra S uma em baixo da outra em diagonal"
       />
-      <nav className="flex justify-between gap-8 text-foreground font-semibold">
-        <Link href="" className="hover:text-primary transition-colors">
-          Sobre mim
-        </Link>
-        <Link href="" className="hover:text-primary transition-colors">
-          Habilidades
-        </Link>
-        <Link href="" className="hover:text-primary transition-colors">
-          Projetos
-        </Link>
-        <Link href="" className="hover:text-primary transition-colors">
-          Contato
-        </Link>
+      <nav className="flex justify-between gap-8 text-foreground text-heading font-semibold">
+        <div className="relative">
+          <Link href="" className={`${linkUnderlineAnimation}`}>
+            Sobre mim
+          </Link>
+        </div>
+        <div className="relative">
+          <Link href="" className={`${linkUnderlineAnimation}`}>
+            Habilidades
+          </Link>
+        </div>
+        <div className="relative">
+          <Link href="" className={`${linkUnderlineAnimation}`}>
+            Projetos
+          </Link>
+        </div>
+        <div className="relative">
+          <Link href="" className={`${linkUnderlineAnimation}`}>
+            Contato
+          </Link>
+        </div>
       </nav>
       <div className="flex items-center gap-4">
-        <Button asChild>
+        <Button asChild className="relative">
           <Link href={"/assets/curriculo.pdf"} download>
             Currículo
             <Download width={20} height={20} />

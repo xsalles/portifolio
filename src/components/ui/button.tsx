@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-foreground text-background hover:underline",
+        default: `bg-foreground text-background hover:bg-foreground/90 active:bg-foreground/80`,
       },
       size: {
         default: "h-9 px-5 has-[>svg]:gap-2 rounded-sm py-4",
