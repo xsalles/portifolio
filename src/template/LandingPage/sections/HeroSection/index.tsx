@@ -10,8 +10,8 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between mt-20  gap-10 h-full">
-      <div className="flex flex-col max-w-[600px]">
+    <section className="flex flex-col-reverse md:flex-row items-center h-auto justify-between mt-20 gap-10 py-[60px] px-4 md:px-20">
+      <div className="flex flex-col  max-w-[600px]">
         <h1 className="text-5xl">
           Olá, eu sou <span className="font-extrabold">Pedro Sales</span> <br />
           <span className="font-extrabold">Fullstack</span>{" "}
@@ -38,7 +38,6 @@ export default function HeroSection() {
         width={500}
         height={500}
         quality={100}
-        className="w-full max-w-[500px] h-auto"
       />
     </section>
   );

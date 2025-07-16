@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${sora.variable} antialiased`}>
+      <body className={`${sora.variable} antialiased min-h-screen`}>
         <link rel="shortcut icon" href="/logo-white.svg" type="image/x-icon" />
        <ThemeProvider
           attribute="class"
