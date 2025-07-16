@@ -5,20 +5,15 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { Download } from "lucide-react";
 import { ModeToggle } from "../ModeToggle";
-import { useTheme } from "next-themes";
 import { linkUnderlineAnimation } from "./data";
-import { useEffect, useState } from "react";
+import { useThemeImage } from "@/hooks/useThemeImage";
 
 export default function Header() {
-  const { theme } = useTheme();
 
-  const [mounted, setMounted] = useState(false)
-  
-     useEffect(() => {
-      setMounted(true)
-     })
-  
-     const logoSrc = mounted ? `/${theme === "light" ? "logo-black.svg" : "logo-white.svg"}` : "logo-white.svg";
+  const logoSrc = useThemeImage({
+    lightImage: "logo-white.svg",
+    darkImage: "logo-black.svg",
+  });
 
   return (
     <header className="bg-background py-6 px-20 justify-between flex items-center fixed top-0 left-0 right-0 z-50 border-b border-border">
@@ -52,7 +47,11 @@ export default function Header() {
       </nav>
       <div className="flex items-center gap-4">
         <Button asChild className="relative">
-          <Link href={"/assets/curriculo.pdf"} className="text-button-2 font-semibold" download>
+          <Link
+            href={"/assets/curriculo.pdf"}
+            className="text-button-2 font-semibold"
+            download
+          >
             Currículo
             <Download width={20} height={20} />
           </Link>
