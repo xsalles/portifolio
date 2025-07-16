@@ -38,6 +38,7 @@ export default function HeroSection() {
         width={500}
         height={500}
         quality={100}
+        className="block md:hidden lg:block"
       />
     </section>
   );
