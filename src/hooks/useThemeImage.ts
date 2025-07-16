@@ -17,7 +17,7 @@ export function useThemeImage({ darkImage, lightImage }: themeImageProps) {
 
   const imageSrc = mounted
     ? `/${theme === "light" ? darkImage : lightImage}`
-    : lightImage;
+    : `/${lightImage}`;
 
     return imageSrc
 }
