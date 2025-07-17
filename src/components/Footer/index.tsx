@@ -11,7 +11,7 @@ export default function Footer() {
   });
 
   return (
-    <footer className="flex w-full items-center justify-between bg-background px-20 py-6 text-sm border-t border-border">
+    <footer className="flex w-full items-center justify-between bg-background md:px-10 lg:px-20 px-4 py-6 text-sm border-t border-border">
       <Image src={`${logoSrc}`} alt="" width={32} height={32} />
       <p className="text-heading-h6 font-semibold">Feito por Pedro Sales</p>
     </footer>

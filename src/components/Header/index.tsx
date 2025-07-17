@@ -16,14 +16,14 @@ export default function Header() {
   });
 
   return (
-    <header className="bg-background py-6 px-20 justify-between flex items-center fixed top-0 left-0 right-0 z-50 border-b border-border">
+    <header className="bg-background py-6 md:px-10 lg:px-20 px-4  justify-between flex items-center fixed top-0 left-0 right-0 z-50 border-b border-border">
       <Image
         src={`${logoSrc}`}
         width={32}
         height={32}
         alt="Logo criada para o Portifólio do Pedro Sales onde contém uma letra X e uma letra S uma em baixo da outra em diagonal"
       />
-      <nav className="flex justify-between gap-8 text-foreground text-heading font-semibold">
+      <nav className="hidden md:flex justify-between gap-8 text-foreground text-heading font-semibold">
         <div className="relative">
           <Link href="" className={`${linkUnderlineAnimation}`}>
             Sobre mim

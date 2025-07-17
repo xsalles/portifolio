@@ -11,7 +11,7 @@ export const socialMediaButtons: socialMediaButtonsProps[] = [
         children: <Github width={20} height={20} />,
     },
     {
-        href: "https://www.linkedin.com/in/pedro-sales/",
+        href: "https://www.linkedin.com/in/pedro-sales-00090a274/",
         children: <Linkedin width={20} height={20} />,
     }
 ]
