@@ -10,7 +10,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center h-auto justify-between mt-20 gap-10 py-[60px] px-4 md:px-20">
+    <section className="flex flex-col-reverse md:flex-row items-center h-auto justify-between mt-20 gap-10 py-[60px]">
       <div className="flex flex-col  max-w-[600px]">
         <h1 className="text-5xl">
           Olá, eu sou <span className="font-extrabold">Pedro Sales</span> <br />

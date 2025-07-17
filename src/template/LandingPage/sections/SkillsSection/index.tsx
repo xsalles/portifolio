@@ -2,7 +2,7 @@ import GridCardSkills from "@/components/GridCardSkills";
 
 export default function SkillsSection() {
   return (
-    <section className="w-full flex flex-col items-center justify-center px-4 md:px-20">
+    <section className="w-full flex flex-col items-center justify-center ">
       <div className="flex flex-col gap-4 items-center">
         <h3 className="text-heading-h2 md:text-5xl">
           Minhas <span className="font-extrabold ">Habilidades</span>
